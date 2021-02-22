@@ -51,20 +51,22 @@
 							<p>
 							<section>
 								<p>
-                                    The project was two part, one was to design a parametric, pressfit model containing several units. The model has to be resizable, so the material thickness and sizes in the model can be changed using parametric variables. Description of this part can be found her below. The second part is a group project and the goal was to choose a laser cutter and calculates the kerf, this part can be accessed <a href="https://elisaosk.github.io/VefsidanMin/H1.html">here</a>
+                                    The project was two part, one was to design a object that could not be manufactured by subtraction and to 3d print this object. The material provided in the course is a maximum of 100g. As well as that I had to 3d scan an object of my choosing and document the process. Description of this part can be found her below. The second part is a group project and the goal was to test the limits of the 3d printer and make rules regarding its use, this part can be accessed <a href="Hópverkefni 2 (elisaosk.github.io)">here</a>
                                 </p>
 								<header>
 									<h3>Tools</h3>
 								</header>
 								<p>
-                                    For this project I decided to use Fusion 360 and Inkscape. I have previous experience with Fusion as well as Inventor, Autocad and Solidworks. But the deciding factor in this was the instructors recommendation of Fusion for this project. 
-                                </p>
-                                <p>
-                                    Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Other formats can be imported and exported. Inkscape can render primitive vector shapes (e.g. rectangles, ellipses, polygons, arcs, spirals, stars and 3D boxes) and text. 
+                                    For this project I decided to use Fusion 360, Cura and experimented with Meshmixer. I have previous experience with Fusion as well as Inventor, Autocad and Solidworks. I decided to use Fusion because in project 1 in this course I used Fusion and that went great.
                                 </p>
                                 <p>
                                     Fusion 360 is a cloud-based CAD/CAM tool for collaborative product development. Fusion 360 enables exploration and iteration on product ideas and collaboration within distributed product development team.
                                 </p>
+                                <p>
+                                    Cura is an open source slicing application for 3D printers. I chose this program because my brother recommended it. He has previous experience with 3d printing.
+                                </p>
+                                <p>
+                                    Meshmixer is a state-of-the-art software for working with triangle meshes. I used Meshmixer when i attempted to create an irregular pattern in my design. In the end I went another way but this program has many excellent features to create patterns.
                                 <p>
                                     
      							<header>
@@ -74,22 +76,132 @@
                                     <a href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null" class="button circled scrolly">Fusion 360</a>
                                 </p>
                                 <p>
-                                    <a href="https://inkscape.org/" class="button circled scrolly">Inkscape</a>
+                                    <a href="https://ultimaker.com/software/ultimaker-cura" class="button circled scrolly">Cura</a>
+                                </p>
+                                <p>
+                                    <a href="https://www.meshmixer.com/download.html" class="button circled scrolly">Meshmixer</a>
                                 
                                 <header>
-									<h3>The design</h3>
+									<h3>Design</h3>
 								</header>
                                 <p>
-
+                                    I started by looking at projects from students that have finished this course as well as looking up things to 3d print online. In the end I decided to design and manufacture a small pencil case for my favourite pens. I have a large one that is always stuffed and sometimes I can’t find my favourite pen quickly. This will hopefully encourage me to stop hoarding pens. 
+                                </p>
+                                <p>
+                                    I looked for some ideas for the design online and decided to create a simple case with a pattern. I found the video <a href=" Layer by Layer - How To Make Voronoi Patterns in MeshMixer - YouTube "> Layer by Layer - How To Make Voronoi Patterns in Meshmixer </a> that shows how to use Meshmixer to create patterns on an object. I thought the pattern looked very nice and decided to use Meshmixer.
+                                </p>
+                                <p>
+                                    Now that I had a design in mind I had choose the size of the pensil case. I chose the radius of the bottom, wall height and thickness. Later I changed these parameters because of how long this would take to print. The original parameters can be seen in the picture here below:
+                                </p>
+                                <p>
+                                    <img src="images/v3_parameters1.jpg"> 
+                                </p>
+                                <p>
+                                    By drawing half of the vase and using the command Revolve I created the shape of the vase. The drawing can be seen here below:
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_sketch.jpg"> 
+                                </p>
+                                <p>
+                                    And then after using Revolve:
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_revolve.jpg"> 
+                                </p>
+                                <p>
+                                    The command Shell is used to hollow out the shape. I chose to have the wall thickness 3mm. To round out the edges of the pencil holder the command Fillet was used. 
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_extrude.jpg"> 
+                                </p>
+                                <p>
+                                    To create the pattern in Meshmixer I exported the pencil holder in stl format and opened the file in Meshmixer. I made a couple of different versions of the pencil holder with different patterns, but I was never happy with the result. One example can be seen here below:
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_meshmixer.jpg"> 
+                                </p>
+                                <p>
+                                    So I decided to make the pattern in Fusion and not irregular. I drew the pattern on the front plane.
+                                </p>
+                                <p>
+                                    <img src="images/v3_mynstur_sketch.jpg"> 
+                                </p>
+                                <p>
+                                    Then the command Extrude is used to cut from the pencil holder. These holes are then replicated around the middle axis using Circular pattern.
+                                </p>
+                                <p>
+                                    <img src="images/v3_mynstur.jpg">
+                                </p>
+                                <p>
+                                    I was very happy with this result and exported the file in stl format. This file can be opened in Cura and I chose the printer Ultimaker 3. This is the printer I will be using at Fablab. After slicing the object Cura showed that printing this object would take 8 hours and 16 minutes. 
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_cura.jpg" width="550" height="400"> 
+                                </p>
+                                <p>
+                                    Because of this I decided to change the radius of the bottom and the wall height. The new parameters can be seen here below:
+                                </p>
+                                <p>
+                                    <img src="images/v3_parameters.jpg"> 
+                                </p>
+                                <p>
+                                    I also changed the shape of the curve and the new drawing can be seen here below:
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_sketch1.jpg">
+                                </p>
+                                <p>
+                                    The final design is:
+                                </p>
+                                <p>
+                                    <img src="images/v3_loka.jpg">
+                                </p>
+                                <p>
+                                    Then the file is exported and opened in Cura. The printing will take 5 hours and 2 minutes
+                                </p>
+                                <p>
+                                    <img src="images/v3_vasi_cura1.jpg" width="550" height="400">
+                                </p>
+                        
 								<header>
 									<h3>Production</h3>
 								</header>
                                 <p>
+                                    I was using a 3d printer called Ultimaker 3. To start printing the pencil holder I opened the file in Cura and plugged a USB drive from the 3d printer in my computer. The option to move files to the USB drive appears and that is what I do. When the USB drive is plugged into the 3d printer you can choose to print the latest file by simply pressing enter.
+                                </p>
+                                <p>
+                                    The printer takes a couple of minutes to warm up and then starts printing.
+                                </p>
+                                <p>
+                                    <img src="images/v3_prenta.jpg" width="500" height="700">
+                                </p>
+                                
+								<header>
+									<h3>Result</h3>
+								</header>
+                                <p>
+                                    I was very happy with the result. Although the pencil holder was smaller than I thought it would be. But I think that is mostly because it looks a lot bigger in Fusion. But the size was suitable for its purpose.
+                                </p>
+                                <p>
+                                    <img src="images/v3_loka1.jpg" width="500" height="700">
+                                </p>
+                                <p>
+                                    <img src="images/v3_loka2.jpg" width="500" height="700">
+                                </p>
+                                <p>
                                     
+                                </p>
+                                <p>
+                                    
+                                </p>
+                                <p>
+                                    
+                                </p>
+                                <p>
                                     
 								<header>
 									<h3>Search engine keywords</h3>
-                                    HTML5, HTML5 up, Github, Git
+                                    3d printing ideas, 3d Printed vase, 3d printing patterns, Meshmixer, Meshmixer patterns, Fusion shell
 								</header>
 								<p>
 
