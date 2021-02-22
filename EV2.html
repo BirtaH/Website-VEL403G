@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project 2</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo">Manufacturing Processes - VÉL403G</a></h1>
+								<hr />
+								<p>Project 2</p>
+							</header>
+						</div>
+                    
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="Index.html">Home</a></li>
+								<li><a href="Resume.html">Resume</a></li>
+								<li>
+									<a href="VEL403G.html">VÉL403G</a>
+									<ul>
+										<li><a href="EV1.html">P1 - Making a website</a></li>
+                                        <li><a href="EV2.html">P2 - Laser cut pressfit model</a></li>
+                                        <li><a href="EV3.html">P3 - 3d printing and scanning</a></li>
+									</ul>
+							</ul>
+						</nav>
+
+				</div>	
+			<!-- Main -->
+				<div class="wrapper style1">
+					<div class="container">
+						<article id="main" class="special">
+							<p>
+							<section>
+								<p>
+                                    The project was two part, one was to design a parametric, pressfit model containing several units. The model has to be resizable, so the material thickness and sizes in the model can be changed using parametric variables. Description of this part can be found her below. The second part is a group project and the goal was to choose a laser cutter and calculates the kerf, this part can be accessed <a href="https://elisaosk.github.io/VefsidanMin/H1.html">here</a>
+                                </p>
+								<header>
+									<h3>Tools</h3>
+								</header>
+								<p>
+                                    For this project I decided to use Fusion 360 and Inkscape. I have previous experience with Fusion as well as Inventor, Autocad and Solidworks. But the deciding factor in this was the instructors recommendation of Fusion for this project. 
+                                </p>
+                                <p>
+                                    Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format. Other formats can be imported and exported. Inkscape can render primitive vector shapes (e.g. rectangles, ellipses, polygons, arcs, spirals, stars and 3D boxes) and text. 
+                                </p>
+                                <p>
+                                    Fusion 360 is a cloud-based CAD/CAM tool for collaborative product development. Fusion 360 enables exploration and iteration on product ideas and collaboration within distributed product development team.
+                                </p>
+                                <p>
+                                    
+     							<header>
+									<h3>How to access tools</h3>
+								</header>
+                                <p>
+                                    <a href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null" class="button circled scrolly">Fusion 360</a>
+                                </p>
+                                <p>
+                                    <a href="https://inkscape.org/" class="button circled scrolly">Inkscape</a>
+                                
+                                <header>
+									<h3>The design</h3>
+								</header>
+                                <p>
+                                    I wanted to create something that I could use at home. At first I thought a bookstand or maybe a laptop stand but in the end I decided to make a dog bowl stand. My dog recently had hip surgery and has been on my mind a lot lately.  I hope this will increase his quality of life as well as stop him from throwing all his food on the floor.
+                                </p>
+                                <p>
+                                    I started by watching a video Fusion360: 
+                                    <a href="https://www.youtube.com/watch?v=9U2JPfkQpsE">Automatically sized finger-joints</a>. I followed the tutorial and then started my project.
+                                </p>
+                                <p>
+                                    The next step was design the bowl stand and outline the parameters. I made a rough sketch and here below is a sketch made in fusion containing the design and parameters. I decided to keep the finger length close to 16.
+                                </p>
+                                <p>
+                                    <img src="images/v2_mal.jpg">
+                                </p>
+                                <p>
+                                    I started a new project in Fusion and added the user parameters as can be seen on the picture below. 
+                                </p>
+                                <p>
+                                    <img src="images/v2_parameters.jpg">
+                                </p>
+                                <p>
+                                    First I created the top panel containing circlular holes for the dog bowls. I linked all the dimensions to the parameters I created. The sketch can be seen here below.
+                                </p>
+                                <p>
+                                    <img src="images/v2_topPanel.jpg">
+                                </p>
+                                <p>
+                                    Then I extruded the sketch and created finger joints on the back of the front panel as well as the left side of the top panel. The finger joint size and amount is a user parameter that was created in the beginning. 
+                                </p>
+                                <p>
+                                    <img src="images/v2_topPanelFingers.jpg">
+                                </p>
+                                <p>
+                                    To create the finger joints a sketch was made and then extruded. Then rectangular pattern was used to replicate the finger joint.
+                                </p>
+                                <p>
+                                    The back side of the bowl stand was created next. The finger joints on the top of the back panel were created using combine. 
+                                </p>
+                                <p>
+                                    <img src="images/v2_backPanel.jpg">
+                                </p>
+                                <p>
+                                    Finger joints were added to the left side of the back panel and then the command extrude was used to create a new body, the front side. The combine command is then used to create fingers joints on the top panel.
+                                </p>
+                                <p>
+                                    <img src="images/v2_frontPanel.jpg">
+                                </p>
+                                <p>
+                                    The left panel was created, and the command combine is used to create finger joints on three sides of the panel. The right side is created using the extrude command on the left panel and choosing the operation new body. Using the combine the fingers joints on the right side are created.
+                                </p>
+                                <p>
+                                    The final step is to inscribe my dogs name on the front panel. I tried to create a parameter for the name written on the dog bowl stand but it was not possible to add a string parameter. Therefore the name has to be changed in the sketch. Initially I had planned on engraving the name on the stand but in the end I decided to cut out the name so I could later paint the bowl stand and the enscription would still be noticable.
+                                </p>
+                                <p>
+                                    The final sketch is can be seen on the picture here below:
+                                </p>
+                                <p>
+                                    <img src="images/v2_til3.jpg">
+                                </p>
+                                <p>
+                                    All the dimensions are linked to user parameters. But to be sure of this I changed all the parameters and saw that the design changed as I changed the parameters.
+                                </p>
+                                <p>
+                                    To use the drawing in the laser cutter I have to convert the file to a dxf format. This is done using the command align to align the pieces. The maximum size of the laser cutter is 600x300mm so I arranged the pieces into boxes. 
+                                </p>
+                                <p>
+                                    <img src="images/v2_box.jpg">
+                                </p>
+                                <p>
+                                    To include the calculated kerf from the group project I used the command offset to account for the material removed by the laser cutter. Then by right clicking the drawing I can choose to save the file as dfx. 
+                                </p>
+                                <p>
+   
+                                    <img src="images/v2_project.jpg">
+                                </p>
+                                <p>
+                                    The dxf file can be opened in Inkscape and there I had to remove the original lines that were not offset. To do this I had to change the line width and then I could distinguish between the inner and outer line. Then I proceeded to delete every line that was not offset. Then the file was saved in pdf format and stored on a USB drive. 
+								<header>
+									<h3>Production</h3>
+								</header>
+                                <p>
+                                    Once my design was finalized I moved on to the production phase. At Fablab I chose to use the laser printer named Rey.
+                                </p>
+                                <p>
+                                    <img src="images/v2_Rey.jpg">
+                                </p>
+                                <p>
+                                    The material I choose to use is 4mm wooden. To make sure the cut of the laser is clean I have to make sure the height of the laser is correct. This is done by attaching a metal piece to the laser cutter and selecting a height where the metal piece barely touches the wood. Then the home point of the laser is chosen in the top left corner of the wood. 
+                                </p>
+                                <p>
+                                    To start cutting I opened the pdf file and choose print. There I choose the appropriate setting for the laser cutter:
+                                </p>
+                                <p>
+                                    Bla
+                                </p>
+                                <p>
+                                    Bla
+                                </p>
+                                <p>
+                                    Bla
+                                </p>
+                                <p>
+                                    And set the material size as 600x300mm. 
+                                </p>
+                                <p>
+                                    Then I press print and the laser cutter will start.
+                                </p>
+                                <p>
+                                    <img src="images/v2_nidurstada.jpg" alt="" width="700" height="400">
+                                </p>
+                                
+								<header>
+									<h3>Result</h3>
+								</header>
+                                <p>
+                                    Here the final result can be seen. I am quiet happy with the outcome and I even think I estimated the height correctly.
+                                </p>
+                                <p>
+                                    <img src="images/v2_hugo1.jpg" alt="" width="700" height="500">
+                                </p>
+                                <p>
+                                    <img src="images/v2_hugo2.jpg" alt="" width="700" height="500">
+                                </p>
+                                <p>
+                                    <img src="images/v2_hugo3.jpg" alt="" width="700" height="500">
+                                </p>
+                                <p>
+                                    But as further tests were conducted on the design a serious flaw was revealed. The dog has adapted and somehow managed to pick up his food bowl and throw it on the ground to protest lack of food.
+                                </p>
+                                <p>
+                                    <img src="images/v2_hugo4.jpg" alt="" width="500" height="700">
+								<header>
+									<h3>Search engine keywords</h3>
+                                    HTML5, HTML5 up, Github, Git
+								</header>
+								<p>
+
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
